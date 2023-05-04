@@ -93,13 +93,13 @@ function guessSong(userName){
 
   for(let i = 0; i < 6; i++){
     if(songs.includes(guess7)){
-      alert("Correct" + guees7 + "is on 'Pet Sounds'" + songs.join(", "));
+      alert("Correct" + guess7 + "is on 'Pet Sounds'" + songs.join(", "));
       score += 1;
       break;
-    } else if(i === 5);{
+    } else if(i === 5){
         alert("Sorry no more attempts" + songs.join(", "));
     } else {
-      alert("Incorrect, try again.")
+      alert("Incorrect, try again.");
     }
   }
 }
