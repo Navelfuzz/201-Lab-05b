@@ -59,3 +59,7 @@ Add a comment to this Canvas submission with answers to the following questions
 How did this go, overall?
 What observations or questions do you have about what you’ve learned so far?
 How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+
+## Collaboration
+
+- Functions were added by Aaron Clark as the driver with Jon Stillson as the navigator.
