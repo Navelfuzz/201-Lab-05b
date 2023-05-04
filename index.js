@@ -65,7 +65,7 @@ if(guess5 === 'y' || guess5 === 'yes'){
 //function secretNum(userName){
   let numGuesses = 0; 
   const maxAttempts = 4;
-  const correctNum = 77;
+  const correctNum = '77';
   
   while (numGuesses < maxAttempts){
     let guess6 = prompt('Guess a number between 1 and 100');
