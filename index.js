@@ -62,29 +62,31 @@ if(guess5 === 'y' || guess5 === 'yes'){
     score -=1;
   }
 
-let numGuesses = 0; 
-const maxAttempts = 4;
-const correctNum = 77;
-
-while (numGuesses < maxAttempts){
-  let guess6 = prompt('Guess a number between 1 and 100');
-
-  if (guess6 === correctNum){
-    alert('Congratulations! You got it!');
-    break;
-  } else if (guess6 < correctNum){
-    alert('Your guess is too low');
-  } else {
-    alert('Your guess is too high');
+function secretNum(userName){
+  let numGuesses = 0; 
+  const maxAttempts = 4;
+  const correctNum = 77;
+  
+  while (numGuesses < maxAttempts){
+    let guess6 = prompt('Guess a number between 1 and 100');
+  
+    if (guess6 === correctNum){
+      alert('Congratulations! You got it!');
+      break;
+    } else if (guess6 < correctNum){
+      alert('Your guess is too low');
+    } else {
+      alert('Your guess is too high');
+    }
+    numGuesses++;
   }
-  numGuesses++;
+  
+  if (numGuesses === maxAttempts){
+    alert(`Sorry ${userName}, you've run out of guesses. The correct answer was: ${correctNum}.`)
+  }  
 }
 
-if (numGuesses === maxAttempts){
-  alert(`Sorry ${userName}, you've run out of guesses. The correct answer was: ${correctNum}.`)
-}
-
-function guessSong(userName){
+function guessSong(){
   const songs = ['wouldn\'t it be nice', 'you still believe in me', 'that\'s not me', 
   'don\'t talk (put your head on my shoulder)', 'i\'m waiting for the day', 'let\'s go away for awhile',
   'sloop john b', 'god only knows', 'i know there\'s an answer', 'here today', 
