@@ -70,7 +70,7 @@ if(guess5 === 'y' || guess5 === 'yes'){
   while (numGuesses < maxAttempts){
     let guess6 = prompt('Guess a number between 1 and 100');
   
-    if (guess6 === correctNum){
+    if (guess6 == correctNum){
       alert('Congratulations! You got it!');
       break;
     } else if (guess6 < correctNum){
@@ -95,7 +95,7 @@ if(guess5 === 'y' || guess5 === 'yes'){
 
   for(let i = 0; i < 6; i++){
     if(songs.includes(guess7)){
-      alert("Correct" + guess7 + "is on 'Pet Sounds'" + songs.join(", "));
+      alert("Correct " + guess7 + " is on 'Pet Sounds' " + songs.join(", "));
       score += 1;
       break;
     } else if(i === 5){
