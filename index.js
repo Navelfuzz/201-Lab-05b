@@ -98,14 +98,14 @@ function guessSong(userName){
       for (let j = 0; j < songs.length; j++){
         console.log(songs[j]);
       }
-      break;  
-    } else if (i = 6);{
-        alert(`Sorry... no more attempts, and your taste in music is questionable...`);
-        for (let l = 0; l < songs.length; l++){
-        console.log(songs[l]);}
+    } else if(!songs.includes(guess7));{
+        alert(`Sorry... try again`);
     } else {
       alert(`Sorry... no more attempts, and your taste in music is questionable...`);
       score -= 1;
+      for (let j = 0; j < songs.length; j++){
+        console.log(songs[j]);
+      }
     }
   }
 }
