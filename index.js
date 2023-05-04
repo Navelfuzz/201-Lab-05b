@@ -62,7 +62,7 @@ if(guess5 === 'y' || guess5 === 'yes'){
     score -=1;
   }
 
-function secretNum(userName){
+//function secretNum(userName){
   let numGuesses = 0; 
   const maxAttempts = 4;
   const correctNum = 77;
@@ -84,9 +84,9 @@ function secretNum(userName){
   if (numGuesses === maxAttempts){
     alert(`Sorry ${userName}, you've run out of guesses. The correct answer was: ${correctNum}.`)
   }  
-}
+//}
 
-function guessSong(){
+//function guessSong(){
   const songs = ['wouldn\'t it be nice', 'you still believe in me', 'that\'s not me', 
   'don\'t talk (put your head on my shoulder)', 'i\'m waiting for the day', 'let\'s go away for awhile',
   'sloop john b', 'god only knows', 'i know there\'s an answer', 'here today', 
@@ -104,6 +104,8 @@ function guessSong(){
       alert("Incorrect, try again.");
     }
   }
-}
+//}
 
-alert(`Thanks for taking my quiz ${userName} :) you scored ${score}`);
+//function finalScore(){
+  alert(`Thanks for taking my quiz ${userName} :) you scored ${score}`);
+//}
