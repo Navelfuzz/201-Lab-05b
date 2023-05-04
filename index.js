@@ -93,31 +93,15 @@ function guessSong(userName){
 
   for(let i = 0; i < 6; i++){
     if(songs.includes(guess7)){
-      alert(`Correct! ${guess7} is on 'Pet Sounds'!`);
+      alert("Correct" + guees7 + "is on 'Pet Sounds'" + songs.join(", "));
       score += 1;
-      for (let j = 0; j < songs.length; j++){
-        console.log(songs[j]);
-      }
-    } else if(!songs.includes(guess7));{
-        alert(`Sorry... try again`);
+      break;
+    } else if(i === 5);{
+        alert("Sorry no more attempts" + songs.join(", "));
     } else {
-      alert(`Sorry... no more attempts, and your taste in music is questionable...`);
-      score -= 1;
-      for (let j = 0; j < songs.length; j++){
-        console.log(songs[j]);
-      }
+      alert("Incorrect, try again.")
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-// TODO: Display the user’s name back to them in your final message to the user.
 alert(`Thanks for taking my quiz ${userName} :) you scored ${score}`);
