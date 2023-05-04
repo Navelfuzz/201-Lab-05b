@@ -91,22 +91,22 @@ function guessSong(userName){
   'i just wasn\'t made for these times', 'pet sounds', 'caroline, no'];
   let guess7 = prompt("Name a song witten by The Beach Boys on their album 'Pet Sounds'" ).toLowerCase();
 
-for(let i = 0; i < 6; i++){
-  if(songs.includes(guess7)){
-    alert(`Correct! ${guess7} is on 'Pet Sounds'!`);
-    score += 1;
-    for (let j = 0; j < songs.length; j++){
-      console.log(songs[j]);
+  for(let i = 0; i < 6; i++){
+    if(songs.includes(guess7)){
+      alert(`Correct! ${guess7} is on 'Pet Sounds'!`);
+      score += 1;
+      for (let j = 0; j < songs.length; j++){
+        console.log(songs[j]);
+      }
+      break;  
+    } else if (i = 6);{
+        alert(`Sorry... no more attempts, and your taste in music is questionable...`);
+        for (let l = 0; l < songs.length; l++){
+        console.log(songs[l]);}
+    } else {
+      alert(`Sorry... no more attempts, and your taste in music is questionable...`);
+      score -= 1;
     }
-    break;  
-  } else if (i = 6;){
-    alert(`Sorry... no more attempts, and your taste in music is questionable...`);
-    for (let l = 0; l < songs.length; l++){
-      console.log(songs[l]);
-  } else {
-    alert(`Sorry... no more attempts, and your taste in music is questionable...`);
-    score -= 1;
-  }
   }
 }
 
@@ -120,4 +120,4 @@ for(let i = 0; i < 6; i++){
 
 
 // TODO: Display the user’s name back to them in your final message to the user.
-alert(`Thanks for taking my quiz ${userName} :) `);
+alert(`Thanks for taking my quiz ${userName} :) you scored ${score}`);
