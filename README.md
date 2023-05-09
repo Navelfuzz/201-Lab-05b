@@ -1,5 +1,7 @@
 # Lab: Finish the “About Me” project
 
+![lighthouse result](lighthouse.png "Lighthouse")
+
 ## Problem Domain
 
 Apply finishing touches to your About Me web site. Make sure your final app meets all of the requirements for this project.
