@@ -2,7 +2,7 @@
 
 let userName = prompt("What's your name?");
 while (!userName){
-  user = prompt("Your name is required. Enter it now or your computer might... explode!");
+  userName = prompt("Your name is required. Enter it now or your computer might... explode!");
 }
 alert(`Welcome to my About page ${userName}! Let's play a guessing game, please answer yes/no OR y/n`)
 let score = 0;
