@@ -1,7 +1,17 @@
 body {
-    background-color: darkgrey;
-  }
-  
-  h1 {
-    font-size: vw;
-  }
+    background-image: linear-gradient(to right top, #c40e2e, #c00342, #b80c54, #ac1b63, 
+                                    #9e2870, #903279, #803a7f, #704082, #5e4582, #4d497f, 
+                                    #3e4a7a, #334b72);
+}
+
+h1 {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h2 {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+
